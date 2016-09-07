@@ -14,6 +14,7 @@ Deploy Tempest
    VertualBox -> Settings -> Network ->
    Port Forwarding -> Host Port 2223, Guest Port 22
 2. Teraterm Macro::
+
   hostname = '127.0.0.1:2223'
   username = 'oomichi'
   password = 'XXX'
