@@ -61,5 +61,6 @@ After that, it is nice to run the simplest test as the first step like::
 
 The reason why the test is the simplest is every cloud should contain one
 flavor at least and the test just checks the existence. We don't need to
-specify any other items on the above minimum configuration.
+specify any other items on the above minimum configuration to operate the test.
+
 
