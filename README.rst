@@ -2,32 +2,7 @@ OpenStack Tempest testing memo
 ==============================
 
 1. Try quickstart of Tempest
-2. Try non-admin operation
-3. Triage the launchpad bugs
-
-Deploy Tempest
---------------
-
-1. Install ubuntu 16.04 on virtualbox. (10 min)::
-
-     768MB memory
-     OpenSSH server
-     VertualBox -> Settings -> Network ->
-     Port Forwarding -> Host Port 2223, Guest Port 22
-
-2. Teraterm Macro::
-
-    hostname = '127.0.0.1:2223'
-    username = 'oomichi'
-    password = 'XXX'
-
-    COMMAND = hostname
-    strconcat COMMAND '/ssh /auth=password /2 /user=' 
-    strconcat COMMAND username
-    strconcat COMMAND ' /passwd='
-    strconcat COMMAND password
-    connect COMMAND
-    end
+2. Triage the launchpad bugs
 
 1. Try quickstart of Tempest
 ----------------------------
