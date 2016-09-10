@@ -27,19 +27,17 @@ Then we need to make minimum setting at least::
     + test_accounts_file = /home/<username>/cloud-01/etc/accounts.yaml
     +
     + [identity]
-    + auth_version = v2
-    + uri = http://<Keystone IP-address>/v2.0/
+    + auth_version = v3
+    + uri = http://<Keystone IP-address>/v3
     +
     + [identity-feature-enabled]
-    + api_v3 = false
+    + api_v2 = false
 
   $ vi etc/accounts.yaml (The following is just for devstack env as sample)
     + - username: 'demo'
     +   tenant_name: 'demo'
     +   password: 'secret'
 
-At the above setting, Keystone v3 API is disabled because the dev community
-is still using v2 API even though that is deprecated.
 After that, it is nice to run the simplest test as the first step like::
 
   $ tempest run --regex tempest.api.compute.flavors.test_flavors.FlavorsV2TestJSON.test_list_flavors_limit_results
