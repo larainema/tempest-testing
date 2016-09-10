@@ -4,6 +4,8 @@ OpenStack Tempest testing memo
 1. Try quickstart of Tempest
 2. Triage the launchpad bugs
 
+This memo is written based on the experience Tempest run on ubuntu 16.04.
+
 1. Try quickstart of Tempest
 ----------------------------
 Run some commands based on the quickstart::
